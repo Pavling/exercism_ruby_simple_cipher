@@ -56,26 +56,22 @@ class SubstitutionCipherTest < MiniTest::Unit::TestCase
   end
 
   def test_cipher_key_is_as_submitted
-    skip
     assert_equal(@cipher.key, @key)
   end
 
   def test_cipher_encode
-    skip
     plaintext = "aaaaaaaaaa"
     ciphertext = "abcdefghij"
     assert_equal(ciphertext, @cipher.encode(plaintext))
   end
 
   def test_cipher_decode
-    skip
     plaintext = "aaaaaaaaaa"
     ciphertext = "abcdefghij"
     assert_equal(plaintext, @cipher.decode(ciphertext))
   end
 
   def test_cipher_reversible
-    skip
     plaintext = "abcdefghij"
     assert_equal(plaintext, @cipher.decode(@cipher.encode(plaintext)))
   end
