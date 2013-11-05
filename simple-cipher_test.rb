@@ -96,21 +96,18 @@ class PseudoShiftCipherTest < MiniTest::Unit::TestCase
   end
 
   def test_cipher_encode
-    skip
     plaintext = "aaaaaaaaaa"
     ciphertext = "dddddddddd"
     assert_equal(ciphertext, @cipher.encode(plaintext))
   end
 
   def test_cipher_decode
-    skip
     plaintext = "aaaaaaaaaa"
     ciphertext = "dddddddddd"
     assert_equal(plaintext, @cipher.decode(ciphertext))
   end
 
   def test_cipher_reversible
-    skip
     plaintext = "abcdefghij"
     assert_equal(plaintext, @cipher.decode(@cipher.encode(plaintext)))
   end
