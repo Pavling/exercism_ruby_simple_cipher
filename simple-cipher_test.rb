@@ -24,7 +24,6 @@ class RandomKeyCipherTest < MiniTest::Unit::TestCase
   end
 
   def test_cipher_reversible
-    skip
     plaintext = "abcdefghij"
     assert_equal(plaintext, @cipher.decode(@cipher.encode(plaintext)))
   end
