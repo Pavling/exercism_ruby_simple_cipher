@@ -2,6 +2,7 @@ class Cipher
 
   def initialize(key)
     @key = key
+    raise ArgumentError unless self.key[/[a-z]/]
   end
 
   def key
